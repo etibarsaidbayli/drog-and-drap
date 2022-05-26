@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Trello Clone</title>
+  </head>
+  <body>  
+    <!-- modal -->
+    <div class="modal" id="todoForm">
+      <div class="header">
+        <div class="title">Add Todo</div>
+        <button class="btn close-modal">&times;</button>
+      </div>
+      <form id="addTodoForm" class="body">
+        <input type="text" id="todoInput" />
+        <button id="todoSubmit">Add Todo</button>
+      </form>
+    </div>
+    <!-- todo -->
+    <div class="todo-container">
+      <div class="status" id="noStatus">
+        <h1>Backlog</h1>
+        <button id="addBtn">+ Add Todo</button>
+      </div>
+      <div class="status">
+        <h1>In Progress</h1>
+      </div>
+      <div class="status">
+        <h1>In Review</h1>
+      </div>
+      <div class="status">
+        <h1>Completed</h1>
+      </div>
+    </div>
+
+    <div id="overlay"></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
